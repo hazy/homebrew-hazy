@@ -3,7 +3,7 @@ class Hazy < Formula
 
   desc "Command line interface (CLI) to the Hazy web service."
   homepage "https://github.com/hazy/toolbelt"
-  url "https://github.com/hazy/toolbelt/archive/v0.0.3-alpha.tar.gz"
+  url "https://codeload.github.com/hazy/toolbelt/tar.gz/v0.0.3-alpha"
   sha256 "8c0d53570093e4b79f73898dc79943d71945f748d83456ee71ee7d96f1e97191"
   version "0.0.3"
 
@@ -20,8 +20,13 @@ class Hazy < Formula
   end
 
   resource "click" do
-    url "https://github.com/thruflo/click/archive/6.7-dev.tar.gz"
+    url "https://codeload.github.com/thruflo/click/tar.gz/6.7-dev"
     sha256 "9d669d2dee8733e20a938cfcd018c3d870f634ee39f54e7c596b8a989f8a3f89"
+  end
+
+  resource "durations" do
+    url "https://codeload.github.com/oleiade/durations/tar.gz/0.3.3"
+    sha256 "d491579471be2bfdbabae685fda6d7853c411898a0b17c816046aa411e03ebcc"
   end
 
   resource "hazy" do
